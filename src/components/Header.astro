@@ -1,0 +1,43 @@
+---
+// src/components/Header.astro
+---
+<header class="header">
+    <nav class="navbar">
+   
+      <ul class="nav-links">
+        <li><a href="https://github.com/AlejandroArafi">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/luis-alejandro-figueroa-aravena-9a289b9b/?originalSubdomain=au">Linkedin</a></li>
+    
+      </ul>
+    </nav>
+  </header>
+  
+  <style>
+  .header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  </style>
+  
