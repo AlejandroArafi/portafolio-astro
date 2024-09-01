@@ -1,0 +1,71 @@
+/* src/styles/global.css o src/components/ProjectCard.css */
+
+/* Estilos para el contenedor de las tarjetas */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+  gap: 16px; /* Espacio entre tarjetas */
+  padding: 16px; /* Espacio alrededor del contenedor */
+  justify-content: center;
+  text-align: center;
+}
+
+/* Estilos para cada tarjeta de proyecto */
+.project-card {
+  max-width: 350px; /* Reduce el ancho para un formato más estrecho */
+  max-height: 6000px; /* Ajusta la altura máxima para hacerlo más vertical */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  margin: 0 auto; /* Centra las tarjetas dentro de cada columna */
+  margin-bottom: 30%;
+}
+
+.project-card:hover {
+  transform: scale(0.97);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 500px; /* Ajusta la altura de la imagen para hacerla más vertical */
+  object-fit: cover; /* Asegúrate de que la imagen cubra el contenedor sin distorsionar */
+}
+
+.project-content {
+  padding: 16px;
+  height: calc(
+    100% - 200px
+  ); /* Ajusta el padding para hacer más espacio para el contenido */
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.project-description {
+  color: #4a4a4a;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.project-link-container {
+  padding: 16px;
+}
+
+.project-link {
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.project-link:hover {
+  background-color: #0056b3;
+}
