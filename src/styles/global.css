@@ -1,5 +1,6 @@
 /* src/styles/global.css */
 
+/* Importación de fuentes */
 @font-face {
   font-family: "Raleway";
   src: url("../assets/fonts/Raleway-VariableFont_wght.ttf");
@@ -9,6 +10,7 @@
   src: url("../assets/fonts/Jost-VariableFont_wght.ttf");
 }
 
+/* Estilo global */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -26,8 +28,12 @@ html {
   font-family: "Arial", sans-serif;
 }
 
+.navbar {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Hero section */
 .hero {
-  /*background-image: url("/public/assets/images/paper.png");*/
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -40,6 +46,7 @@ html {
   z-index: 1;
 }
 
+/* Content section */
 .content {
   text-align: center;
   z-index: 2;
@@ -57,8 +64,6 @@ h1 {
   text-decoration: none;
   color: white;
   background-color: #007bff;
-  /*padding: 0.8rem 2rem;*/
-
   border-radius: 5px;
   font-size: 1.2rem;
   transition: background-color 0.3s;
@@ -67,10 +72,13 @@ h1 {
 .btn:hover {
   background-color: #0056b3;
 }
+
+/* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
 }
 
+/* Media query para dispositivos móviles */
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;

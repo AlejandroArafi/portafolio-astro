@@ -3,7 +3,7 @@
 import Header from '../components/Header.astro';
 import HeroSection from '../components/HeroSection.astro';
 import AboutSection from '../components/AboutSection.astro';
-import ProjectCard from '../components/ProjectCard.jsx';
+import ProjectCard from '../components/ProjectCard.astro';
 
 import Footer from '../components/Footer.astro';
 import NavBar from '../components/NavBar.astro';
@@ -22,31 +22,6 @@ import '../styles/global.css';
 	<NavBar/>
     <HeroSection />
 
-	<div class="project-container">
-	<ProjectCard
-		title="Landing Pasteleria Italiana"
-		description=""
-		imageUrl="/assets/images/p1.webp"
-		link={"/projects/1"}/>
-
-		<ProjectCard 
-		title='Crud'
-		description=''
-		imageUrl="/assets/images/p2.webp"
-		link={'/projects/2'}/>
-
-		<ProjectCard 
-		title='API'
-		description=''
-		imageUrl="/assets/images/p3.webp"
-		link={'/projects/2'}/>
-
-		<ProjectCard 
-		title='App Restaurant'
-		description=''
-		imageUrl="/assets/images/p4.webp"
-		link={'/projects/4'}/>
-
-	</div>
+	
 </body>
 </html>

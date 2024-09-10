@@ -1,7 +1,9 @@
 ---
-import NavBar from "../components/NavBar.astro";
-import ProjectCard from "../components/ProjectCard";
 
+import Header from "../components/Header.astro";
+import NavBar from "../components/NavBar.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import '../styles/global.css';
 
 ---
 
@@ -11,47 +13,65 @@ import ProjectCard from "../components/ProjectCard";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Proyectos - Alejandro Figueroa</title>
     <link rel="stylesheet" href="/src/styles/global.css">
+        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 </head>
 
-<NavBar/>
-<ProjectCard
-title="Landing Pasteleria Italiana"
-description=""
-imageUrl="/assets/images/p1.webp"
-link={"/projects/1"}
-/>
+<body>
+    <Header/>
+    <NavBar/>
 
-<ProjectCard
-title="Crud App"
-description=""
-imageUrl="/assets/images/p2.webp"
-link={"/projects/2"}
-/>
+    <ProjectCard
+    title=""
+    description=""
+    imageUrl="/assets/images/p1.webp"
+    link={"/projects/1"}
+    footerText="Pasteleria Italiana"
+  />
 
-<ProjectCard
-title="API Rest Countries"
-description=""
-imageUrl="/assets/images/p3.webp"
-link={"/projects/3"}
-/>
 
-<ProjectCard
-title='App Restaurant'
-description=""
-imageUrl="/assets/images/p4.webp"
-link={"/projects/4"}
-/>
 
-<ProjectCard
-title='E-commerce'
-description=""
-imageUrl="/assets/images/p5.webp"
-link={"/projects/5"}
-/>
+  <ProjectCard
+    title=""
+    description=""
+    imageUrl="/assets/images/p2.webp"
+    link={"/projects/2"}
+    footerText="Crud App"
+  />
 
-<ProjectCard
-title='App Weather'
-description=""
-imageUrl="/assets/images/p6.webp"
-link={"/projects/6"}
-/>
+
+
+  <ProjectCard
+    title=""
+    description=""
+    imageUrl="/assets/images/p3.webp"
+    link={"/projects/3"}
+    footerText="API Rest Countries"
+  />
+
+  <ProjectCard
+    title=''
+    description=""
+    imageUrl="/assets/images/p4.webp"
+    link={"/projects/4"}
+    footerText="App Restaurant"
+  />
+
+  <ProjectCard
+    title=''
+    description=""
+    imageUrl="/assets/images/p5.webp"
+    link={"/projects/5"}
+    footerText="E-commerce"
+  />
+
+  <ProjectCard
+    title=''
+    description=""
+    imageUrl="/assets/images/p6.webp"
+    link={"/projects/6"}
+    footerText="Weather App"
+  />
+     
+
+</body>
+</html>
