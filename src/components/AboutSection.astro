@@ -60,6 +60,7 @@
 
     .about-logos {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       gap: 25px;
@@ -67,7 +68,9 @@
     }
 
     .about-logos img {
-      width: 90px;
+      width: 100px;
+      max-width: 90px;
+      height: auto;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     }
@@ -100,5 +103,18 @@
   src: url('/assets/fonts/Roboto-Regular.ttf') format('truetype');
 }
 
+@media (max-width: 768px) {
+  .about-logos img {
+    width: 60px;
+  }
+  
+  .about-section h2 {
+    font-size: 2rem;
+  }
+  
+  .about-section p {
+    font-size: 1.2rem;
+  }
+}
   </style>
   
