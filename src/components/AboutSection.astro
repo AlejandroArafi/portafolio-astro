@@ -2,7 +2,7 @@
 // src/components/AboutSection.astro
 ---
 <section id="about-section" class="about-section">
-    <h2>Acerca de mi</h2>
+    <h1>Acerca de mi</h1>
     <p>Como desarrollador frontend, mi pasión y experiencia se concentran en la creación de interfaces de usuario responsivas y en la construcción de experiencias web excepcionales. Echa un vistazo a mis proyectos, donde podrás apreciar mi trabajo tanto en el frontend, con tecnologías como Javascript y React.js, como en el desarrollo integral de aplicaciones web.</p>
   </section>
 
@@ -42,7 +42,7 @@
     }
 
   
-    .about-section h2 {
+    .about-section h1 {
       font-size: 2rem;
       margin-bottom: 1.5rem;
       /*color: #34373C;*/
@@ -106,16 +106,24 @@
 }
 
 @media (max-width: 768px) {
+
+
+  .about-section {
+    max-width: 90%;
+    padding: 2rem;
+  }
+
+
   .about-logos img {
     width: 60px;
   }
   
-  .about-section h2 {
-    font-size: 2rem;
+  .about-section h1 {
+    font-size: 1.5rem;
   }
   
   .about-section p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
   </style>
