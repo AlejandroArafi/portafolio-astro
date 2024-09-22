@@ -21,7 +21,7 @@ const { title, description, imageUrl, link, footerText } = Astro.props;
     background-color: #ffffff;
     transition: transform 0.5s ease, box-shadow 0.3s ease;
     margin: 0 auto;
-    margin-bottom: 15%;
+    margin-bottom: 14%;
     margin-top: 5rem;
   }
 
@@ -88,4 +88,14 @@ const { title, description, imageUrl, link, footerText } = Astro.props;
   .project-link:hover {
     background-color: #0056b3;
   }
+  @media (max-width: 768px) {
+    .project-card {
+     width: 80%;
+     height: auto;
+    
+     
+    }
+  }
+
+
 </style>
