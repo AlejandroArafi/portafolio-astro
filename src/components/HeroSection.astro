@@ -23,7 +23,7 @@
     .hero {
       background-size: cover;
       background-position: center;
-      min-height: 100vh;
+      min-height: 100vh; /*innecesario?*/
       display: flex;
       justify-content: center;
       align-items: center;
@@ -31,6 +31,7 @@
       color: white;
       padding: 0 2rem;
       overflow-x: hidden;
+      margin-top: -2rem;
     }
   
     .content {
@@ -93,7 +94,8 @@
     display: flex; /* Centrar el contenido */
     align-items: center; /* Centrar el contenido verticalmente */
     overflow: hidden; /*evita scroll inesperado*/
-        padding: 0 1rem; /* Reducir padding para evitar desbordamiento */
+    padding: 0 1rem; /* Reducir padding para evitar desbordamiento */
+    margin-bottom: -2rem;
       }
 
   .content h1 {
