@@ -4,40 +4,48 @@
 
  <form action="/submit" method="POST" class="contact-form">
     <div>
-        <label for="name">Nombre</label>
+        <label for="name"> <img src="assets/images/user.png" alt=""> Nombre</label>
         <input type="text" id="name" name="name" placeholder="Tu nombre" required>
     </div>
     
     <div>
-        <label for="email">Correo electrónico</label>
-        <input type="email" id="email" name="email" placeholder="ingresa tu correo" required>
+        <label for="email"> <img src="assets/images/correo.png" alt=""> Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
     </div>
 
     <div>
-        <label for="phone">Teléfono</label>
-        <input type="tel" id="phone" name="phone" placeholder="ingresa tu teléfono">
+        <label for="phone"> <img src="assets/images/telefono1.png" alt=""> Teléfono</label>
+        <input type="tel" id="phone" name="phone" placeholder="Ingresa tu teléfono">
     </div>
 
     <div>
         <label for="message">Mensaje</label>
-        <textarea id="message" name="message" rows="5" placeholder="cuentame lo que necesitas" required></textarea>
+        <textarea id="message" name="message" rows="4" placeholder="Cuentame lo que necesitas" required></textarea>
     </div>
     <div class="btn-container">
         <button type="submit">Enviar</button>
     </div>
-   
+
 </form>
 
 
-
-
 <style>
+
+    .contact-form label img {
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+       position: relative;
+       top: -2px;
+       margin-right: 0.5rem; ;
+     
+       
+    }
 
     .btn-container {
         display: flex;
         justify-content: center;
     }
-
 
     .contact-form {
         max-width: 600px;
@@ -50,10 +58,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin-bottom: 13%; /*num magico*/
         font-family: 'Jost';
-       
     }
-
-
 
     .contact-form div {
         margin-bottom: 1.5rem;
@@ -95,9 +100,7 @@
     }
 
 
-    
-
-   
+/*fuetes*/
 
     @font-face {
         font-family: 'Jost';
@@ -105,21 +108,22 @@
         font-weight: 400;
     }
 
+
+    /*responsive*/
+
     @media (max-width: 768px) {
 
         .contact-form {
-            max-width: 80%;
+            max-width: 70%;
             height: auto;
             margin: 2rem auto; 
+          
             margin-bottom: 30%; /*num magico*/
             font-family: 'Jost';
         }
         .contact-form button {
             width: 100%;
-            
         }
-        
-
     }
 
 
