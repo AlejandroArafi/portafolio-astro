@@ -1,4 +1,6 @@
+---
 
+---
 
  <form action="/submit" method="POST" class="contact-form">
     <div>
@@ -8,7 +10,7 @@
     
     <div>
         <label for="email">Correo electrónico</label>
-        <input type="email" id="email" name="email" placeholder="tucorreo@" required>
+        <input type="email" id="email" name="email" placeholder="ingresa tu correo" required>
     </div>
 
     <div>
@@ -18,10 +20,12 @@
 
     <div>
         <label for="message">Mensaje</label>
-        <textarea id="message" name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+        <textarea id="message" name="message" rows="5" placeholder="cuentame lo que necesitas" required></textarea>
     </div>
-
-    <button type="submit">Enviar</button>
+    <div class="btn-container">
+        <button type="submit">Enviar</button>
+    </div>
+   
 </form>
 
 
@@ -29,8 +33,12 @@
 
 <style>
 
+    .btn-container {
+        display: flex;
+        justify-content: center;
+    }
 
-    
+
     .contact-form {
         max-width: 600px;
         margin: 0 auto;
@@ -41,7 +49,10 @@
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin-bottom: 13%; /*num magico*/
+        font-family: 'Jost';
+       
     }
+
 
 
     .contact-form div {
@@ -63,6 +74,10 @@
         font-size: 1rem;
     }
 
+    .contact-form input {
+        border-radius: 5px;
+    }
+
 
     .contact-form button {
         background-color: #007bff;
@@ -79,6 +94,11 @@
         background-color: #0056b3;
     }
 
+
+    
+
+   
+
     @font-face {
         font-family: 'Jost';
         src: url('/assets/fonts/Jost-VariableFont_wght.ttf') format('truetype');
@@ -92,9 +112,11 @@
             height: auto;
             margin: 2rem auto; 
             margin-bottom: 30%; /*num magico*/
+            font-family: 'Jost';
         }
         .contact-form button {
             width: 100%;
+            
         }
         
 
